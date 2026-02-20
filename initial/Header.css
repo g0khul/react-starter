@@ -1,0 +1,51 @@
+header {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  width: 95%;
+  max-width: 65rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+header img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+  color: #6366f1;
+  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(180deg);
+  }
+}
+
+header h1 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1.5px;
+  filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.2));
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #7c7c8a;
+  font-weight: 400;
+  max-width: 400px;
+  margin: 0 auto;
+}
